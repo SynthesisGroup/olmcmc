@@ -40,9 +40,16 @@ section { padding: 100px 20px; }
 .lh-4 { line-height: 4; }
 .lh-5 { line-height: 5; }
 
+/* */
+.ff-roboto { font-family: 'Roboto', sans-serif; }
+
+/* */
+.fs-sm { font-size: 80%; }
+
 /* Font Colors */
 .fc-black	{ color: #000000; }
 .fc-maroon	{ color: #8b0f4b; }
+.fc-red		{ color: red; }
 
 /* Header */
 header { padding: 0 20px; position: fixed; background-color: #FFFFFF; width: 100%; }
@@ -78,6 +85,26 @@ header .list-menu li.active:after,
 header .list-menu li:hover:after { width: 100%; }
 header .list-menu .list-menu-special { width: 100%; text-align: center; }
 header .list-menu .list-menu-special a { background-color: #8b0f4b; color: #FFFFFF; }
+
+/* Menu Conditions */
+body.home 		header .list-menu .item-menu-home:after 	{ width: 100%; }
+body.about 		header .list-menu .item-menu-about:after 	{ width: 100%; }
+body.doctors 	header .list-menu .item-menu-doctors:after 	{ width: 100%; }
+body.services 	header .list-menu .item-menu-services:after { width: 100%; }
+body.patients 	header .list-menu .item-menu-patients:after { width: 100%; }
+body.careers 	header .list-menu .item-menu-careers:after 	{ width: 100%; }
+body.contact 	header .list-menu .item-menu-contact:after 	{ width: 100%; }
+
+/* Dropdown Menu */
+header .list-menu .list-submenu { transition: 0.3s ease all; margin: 0; padding: 0; position: absolute; top: 100%; left: 0; min-width: 240px; }
+header .list-menu .list-submenu { opacity: 0; height: 0; transform: translateY(50px); visibility: hidden; z-index: -1; background-color: #FFFFFF; }
+header .list-menu .list-submenu .item-submenu { width: 100%; }
+header .list-menu .list-submenu .item-submenu:hover:after { display: none; }
+header .list-menu .list-submenu .item-submenu a { display: block; font-size: 14px; }
+header .list-menu .list-submenu .item-submenu a:hover { background-color: #8b0f4b; color: #FFFFFF; }
+			
+header .list-menu .item-menu { position: relative; }
+header .list-menu .item-menu:hover .list-submenu { opacity: 1; visibility: visible; transform: translateY(0); z-index: 1; height: auto; }
 
 /* Modal Menu */
 .modal.modal-menu .modal-dialog { transform: translate(-50px,0); margin: 0; height: 100%; width: 100%; max-width: 400px; }
@@ -407,6 +434,25 @@ section.services .tab-menu li.active a:hover { color: #555; cursor: default; bac
 .list-links li.active:before,
 .list-links li:hover:before { left: 20px; opacity: 1; color: #8b0f4b; }
 
+/* Sidebar Links Conditions */
+body.patients-admissions .list-links .link-item-admission,
+body.patients-hmo .list-links .link-item-hmo,
+body.patients-healthcare .list-links .link-item-healthcare,
+body.patients-records .list-links .link-item-records,
+body.patients-accommodations .list-links .link-item-accommodations { padding-left: 40px; color: #8b0f4b; }
+
+body.patients-admissions .list-links .link-item-admission a,
+body.patients-hmo .list-links .link-item-hmo a,
+body.patients-healthcare .list-links .link-item-healthcare a,
+body.patients-records .list-links .link-item-records a,
+body.patients-accommodations .list-links .link-item-accommodations a { color: #8b0f4b; }
+
+body.patients-admissions .list-links .link-item-admission:before,
+body.patients-hmo .list-links .link-item-hmo:before,
+body.patients-healthcare .list-links .link-item-healthcare:before,
+body.patients-records .list-links .link-item-records:before,
+body.patients-accommodations .list-links .link-item-accommodations:before { left: 20px; opacity: 1; }
+
 /* List: Services */
 .list-services { padding: 0; padding-bottom: 20px; vertical-align: top; }
 .list-services li { font-size: 14px; width: 100%; max-width: 48%; display: inline-block; padding: 0 15px; line-height: 22px; }
@@ -428,7 +474,7 @@ footer .widget { margin-bottom: 30px; }
 footer .widget-title { position: relative; display: block; margin-bottom: 30px; }
 footer .widget-title:after { display: block; content: ""; height: 2px; background-color: #FFFFFF; width: 80px; margin-top: 15px; }
 footer .kneeler { padding: 50px 20px; }
-footer .list-contact li { border-color: 1px solid #6b0830; }
+footer .list-contact li { border-color: #6b0830; }
 footer .list-contact li i { color: #FFFFFF; }
 
 footer .copyright { padding: 20px; background-color: #6b0830; }
@@ -483,17 +529,23 @@ body.services .nav-pills li .nav-link.active:focus,
 body.services .nav-pills li .nav-link.active:hover { color: #FFFFFF; cursor: default; background: #8b0f4b !important; border: 0; }
 
 /* */
-body.services .project-info-list { padding: 0; margin-bottom: 20px; display: flex; }
-body.services .project-info-list { clear: both; }
-body.services .project-info-list li { border-left: 1px solid #F1F1F1; width: 33.33%; float: left; display: flex; padding: 10px; }
-body.services .project-info-list li .icon-holder { margin-right: 10px; width: 24px; height: 24px; text-align: center; line-height: 24px; }
-body.services .project-info-list li .icon-holder i { font-size: 14px; color: #8b0f4b; }
-body.services .project-info-list li .text-holder p { margin: 0; font-size: 14px; }
+.services .project-info-list { padding: 0; margin-bottom: 20px; display: flex; }
+.services .project-info-list { clear: both; }
+.services .project-info-list li { border-left: 1px solid #F1F1F1; width: 33.33%; float: left; display: flex; padding: 10px; }
+.services .project-info-list li .icon-holder { margin-right: 10px; width: 24px; height: 24px; text-align: center; line-height: 24px; }
+.services .project-info-list li .icon-holder i { font-size: 14px; color: #8b0f4b; }
+.services .project-info-list li .text-holder p { margin: 0; font-size: 14px; }
 
 /* */
 .services .carousel-control { position: absolute; bottom: 60px; z-index: 10; width: 120px; }
 .services .carousel-control button { height: 60px; width: 60px; }
 .services .carousel-control button { background-color: #8b0f4b; color: #FFFFFF; }
+
+/* */
+.list-hmo { margin-bottom: 50px; }
+.list-hmo li { max-width: 160px; margin: 20px; max-height: 100px; }
+.list-hmo li img { filter: grayscale(1); opacity: 0.5; transition: ease 0.3s all; }
+.list-hmo li img:hover { filter: grayscale(0); opacity: 1; }
 
 /* Animations */
 @keyframes beating {
