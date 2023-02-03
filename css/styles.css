@@ -28,6 +28,7 @@ section { padding: 100px 20px; }
 .full-width { width: 100%; }
 .section-title { border-bottom: 1px solid #F1F1F1; margin-bottom: 30px; }
 .anchor-link { scroll-margin-top: 200px; }
+.overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0.9; }
 
 /* Background Colors */
 .bg-shade	{ background-color: #F1F1F1 !important; color: #000000 !important; }
@@ -49,6 +50,7 @@ section { padding: 100px 20px; }
 /* Font Colors */
 .fc-black	{ color: #000000; }
 .fc-maroon	{ color: #8b0f4b; }
+.fc-white	{ color: #FFFFFF; }
 .fc-red		{ color: red; }
 
 /* Header */
@@ -87,17 +89,18 @@ header .list-menu .list-menu-special { width: 100%; text-align: center; }
 header .list-menu .list-menu-special a { background-color: #8b0f4b; color: #FFFFFF; }
 
 /* Menu Conditions */
-body.home 		header .list-menu .item-menu-home:after 	{ width: 100%; }
-body.about 		header .list-menu .item-menu-about:after 	{ width: 100%; }
-body.doctors 	header .list-menu .item-menu-doctors:after 	{ width: 100%; }
-body.services 	header .list-menu .item-menu-services:after { width: 100%; }
-body.patients 	header .list-menu .item-menu-patients:after { width: 100%; }
-body.careers 	header .list-menu .item-menu-careers:after 	{ width: 100%; }
-body.contact 	header .list-menu .item-menu-contact:after 	{ width: 100%; }
+body.home 			header .list-menu .item-menu-home:after 		{ width: 100%; }
+body.about 			header .list-menu .item-menu-about:after 		{ width: 100%; }
+body.doctors 		header .list-menu .item-menu-doctors:after 		{ width: 100%; }
+body.departments 	header .list-menu .item-menu-departments:after 	{ width: 100%; }
+body.services 		header .list-menu .item-menu-services:after 	{ width: 100%; }
+body.patients 		header .list-menu .item-menu-patients:after 	{ width: 100%; }
+body.careers 		header .list-menu .item-menu-careers:after 		{ width: 100%; }
+body.contact 		header .list-menu .item-menu-contact:after 		{ width: 100%; }
 
 /* Dropdown Menu */
-header .list-menu .list-submenu { transition: 0.3s ease all; margin: 0; padding: 0; position: absolute; top: 100%; left: 0; min-width: 240px; }
-header .list-menu .list-submenu { opacity: 0; height: 0; transform: translateY(50px); visibility: hidden; z-index: -1; background-color: #FFFFFF; }
+header .list-menu .list-submenu { transition: 0.3s ease all; margin: 0; padding: 0; top: 100%; left: 0; min-width: 240px; box-shadow: 0 0 10px 5px rgba(0,0,0,0.1); }
+header .list-menu .list-submenu { opacity: 0; height: 0; transform: translateY(50px); visibility: hidden; z-index: -1; background-color: #FFFFFF; position: absolute; }
 header .list-menu .list-submenu .item-submenu { width: 100%; }
 header .list-menu .list-submenu .item-submenu:hover:after { display: none; }
 header .list-menu .list-submenu .item-submenu a { display: block; font-size: 14px; }
@@ -546,6 +549,16 @@ body.services .nav-pills li .nav-link.active:hover { color: #FFFFFF; cursor: def
 .list-hmo li { max-width: 160px; margin: 20px; max-height: 100px; }
 .list-hmo li img { filter: grayscale(1); opacity: 0.5; transition: ease 0.3s all; }
 .list-hmo li img:hover { filter: grayscale(0); opacity: 1; }
+
+/* */
+.section-hotline { background-size: cover; background-position: center; background-attachment: fixed; position: relative; }
+.section-hotline .container { position: relative; z-index: 1; }
+
+.widget-hotline { border: 1px solid rgba(225, 225, 225, 0.2); padding: 30px; background-color: rgba(0, 0, 0, 0.1); border-radius: 20px; }
+.widget-hotline .table-hotline { margin-bottom: 0; color: #FFFFFF; }
+.widget-hotline .table-hotline a { color: #FFFFFF; }
+.widget-hotline .table-hotline tr { border-color: rgba(225, 225, 225, 0.2); }
+.widget-hotline .table-hotline tr:last-child td { border: 0; }
 
 /* Animations */
 @keyframes beating {
