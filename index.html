@@ -64,10 +64,6 @@
 			</div>
 		</div>
 		
-		<style>
-
-		</style>
-		
 		<!-- -->
 		<div class="header-bot">
 			<!-- .container -->
@@ -80,7 +76,6 @@
 							<li class="item-menu item-menu-home"><a href="index.html">Home</a></li>
 							<li class="item-menu item-menu-about"><a href="about.html">About</a></li>
 							<li class="item-menu item-menu-doctors"><a href="doctors.html">Doctors</a></li>
-							<li class="item-menu item-menu-departments"><a href="departments.html">Departments</a></li>
 							<li class="item-menu item-menu-services"><a href="services.html">Services</a></li>
 							<li class="item-menu item-menu-specializations hidden"><a href="specializations.html">Specializations</a></li>
 							<li class="item-menu item-menu-patients">
@@ -119,10 +114,17 @@
 				<div class="row">
 					<!-- .col -->
 					<div class="col-md-12">
-						<!-- -->
 						<ul class="list-contact">
-							<li><i class="fal fa-mobile-android"></i> (045) 435-2421</li>
-							<li><i class="fal fa-mobile-android"></i> (045) 435-2420</li>
+							<li>
+								<i class="fal fa-mobile-android"></i>
+								<h5>Main Hotline</h5>
+								<p>+63-912-3772329</p>
+							</li>
+							<li>
+								<i class="fal fa-mobile-android"></i>
+								<h5>Clark Hotline</h5>
+								<p>+63-909-6055862</p>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -171,9 +173,19 @@
 						<li><a href="about.html">About</a></li>
 						<li><a href="doctors.html">Doctors</a></li>
 						<li><a href="services.html">Services</a></li>
-						<li class="hidden"><a href="specializations.html">Specializations</a></li>
-						<li><a href="patients.html">Patients</a></li>
-						<!--li><a href="news.html">News</a></li-->
+						<li class="list-menu-parent">
+							<a href="patients.html">Patients</a>
+							<a class="toggle-submenu" href="#submenu_patients" data-toggle="collapse"><i class="far fa-angle-down"></i></a>
+							<div class="collapse" id="submenu_patients">
+								<ul class="list-submenu">
+									<li><a href="patients-guide.html">Patients Guide</a></li>
+									<li><a href="hmo-information.html">HMO Information</a></li>
+									<li><a href="healthcare-packages.html">Healthcare Packages</a></li>
+									<li><a href="medical-records.html">Medical Records</a></li>
+									<li><a href="room-accommodations.html">Room Accommodations</a></li>
+								</ul>
+							</div>
+						</li>
 						<li><a href="careers.html">Careers</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
@@ -182,7 +194,6 @@
 				<!-- .modal-footer- -->
 				<div class="modal-footer">
 					<button type="button" class="btn btn-primary">Online Results</button>
-					<!--button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Contact Us</button-->
 				</div>
 			</div>
 		</div>
@@ -210,8 +221,8 @@
 							<div class="col-md-6">
 								<h1><strong>Experience Personal Care</strong></h1>
 								<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
-								<a href="departments.html" class="btn btn-lg btn-primary">Our Departments</a>
-								<a href="services.html" class="btn btn-lg btn-secondary">Our Services</a>
+								<a href="departments.html" class="btn btn-lg btn-primary m-2">Our Departments</a>
+								<a href="services.html" class="btn btn-lg btn-secondary m-2">Our Services</a>
 							</div>
 						</div>
 					</div>					
@@ -227,23 +238,8 @@
 							<div class="col-md-6">
 								<h1><strong>Experience Personal Care</strong></h1>
 								<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
-								<a href="#" class="btn btn-lg btn-primary">Our Services</a>
-							</div>
-						</div>
-					</div>					
-				</div>
-				
-				<!-- .carousel-item -->
-				<div class="carousel-item" style="background-image: url(img/slides/3.jpg)">
-					<!-- .container -->
-					<div class="container h-100 carousel-content">
-						<!-- .row -->
-						<div class="row align-items-center h-100">
-							<!-- .col -->
-							<div class="col-md-6">
-								<h1><strong>Experience Personal Care</strong></h1>
-								<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
-								<a href="#" class="btn btn-lg btn-primary">Our Services</a>
+								<a href="departments.html" class="btn btn-lg btn-primary m-2">Our Departments</a>
+								<a href="services.html" class="btn btn-lg btn-secondary m-2">Our Services</a>
 							</div>
 						</div>
 					</div>					
@@ -283,17 +279,17 @@
 					<!-- .row -->
 					<div class="row h-100 align-items-center">
 						<!-- .col -->
-						<div class="col">
+						<div class="col-md-3">
 							<input class="form-control" type="text" placeholder="First Name" />
 						</div>
 
 						<!-- .col -->
-						<div class="col">
+						<div class="col-md-3">
 							<input class="form-control" type="text" placeholder="Last Name" />
 						</div>
 
 						<!-- .col -->
-						<div class="col">
+						<div class="col-md-3">
 							<input class="form-control" list="option-specialization" id="option_specialization" placeholder="Specialization">
 							<datalist id="option-specialization">
 								<option value="Pyschiatry"></option>
@@ -304,7 +300,7 @@
 						</div>
 						
 						<!-- .col -->
-						<div class="col">
+						<div class="col-md-3">
 							<input class="form-control" list="option-branch" id="option_branch" placeholder="Branch">
 							<datalist id="option-branch">
 								<option value="San Fernando"></option>
@@ -1164,7 +1160,9 @@
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/slick.min.js"></script>
-	<script src="js/scripts.js"></script>	
+	<script src="js/scripts.js"></script>
 </body>
 </html>

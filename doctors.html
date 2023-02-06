@@ -76,9 +76,7 @@
 							<li class="item-menu item-menu-home"><a href="index.html">Home</a></li>
 							<li class="item-menu item-menu-about"><a href="about.html">About</a></li>
 							<li class="item-menu item-menu-doctors"><a href="doctors.html">Doctors</a></li>
-							<li class="item-menu item-menu-departments"><a href="departments.html">Departments</a></li>
 							<li class="item-menu item-menu-services"><a href="services.html">Services</a></li>
-							<li class="item-menu item-menu-specializations hidden"><a href="specializations.html">Specializations</a></li>
 							<li class="item-menu item-menu-patients">
 								<a href="patients.html">Patients</a>
 								<ul class="list-submenu">
@@ -89,7 +87,6 @@
 									<li class="item-submenu"><a href="room-accommodations.html">Room Accommodations</a></li>
 								</ul>
 							</li>
-							<li class="item-menu item-menu-news hidden"><a href="news.html">News</a></li>
 							<li class="item-menu item-menu-careers"><a href="careers.html">Careers</a></li>
 							<li class="item-menu item-menu-contact"><a href="contact.html">Contact</a></li>
 						</ul>
@@ -117,8 +114,16 @@
 					<div class="col-md-12">
 						<!-- -->
 						<ul class="list-contact">
-							<li><i class="fal fa-mobile-android"></i> (045) 435-2421</li>
-							<li><i class="fal fa-mobile-android"></i> (045) 435-2420</li>
+							<li>
+								<i class="fal fa-mobile-android"></i>
+								<h5>Main Hotline</h5>
+								<p>+63-912-3772329</p>
+							</li>
+							<li>
+								<i class="fal fa-mobile-android"></i>
+								<h5>Clark Hotline</h5>
+								<p>+63-909-6055862</p>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -167,9 +172,19 @@
 						<li><a href="about.html">About</a></li>
 						<li><a href="doctors.html">Doctors</a></li>
 						<li><a href="services.html">Services</a></li>
-						<li class="hidden"><a href="specializations.html">Specializations</a></li>
-						<li><a href="patients.html">Patients</a></li>
-						<!--li><a href="news.html">News</a></li-->
+						<li class="list-menu-parent">
+							<a href="patients.html">Patients</a>
+							<a class="toggle-submenu" href="#submenu_patients" data-toggle="collapse"><i class="far fa-angle-down"></i></a>
+							<div class="collapse" id="submenu_patients">
+								<ul class="list-submenu">
+									<li><a href="patients-guide.html">Patients Guide</a></li>
+									<li><a href="hmo-information.html">HMO Information</a></li>
+									<li><a href="healthcare-packages.html">Healthcare Packages</a></li>
+									<li><a href="medical-records.html">Medical Records</a></li>
+									<li><a href="room-accommodations.html">Room Accommodations</a></li>
+								</ul>
+							</div>
+						</li>
 						<li><a href="careers.html">Careers</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
@@ -226,17 +241,17 @@
 					<!-- .row -->
 					<div class="row h-100 align-items-center">
 						<!-- .col -->
-						<div class="col">
+						<div class="col-md-3">
 							<input class="form-control" type="text" placeholder="First Name" />
 						</div>
 
 						<!-- .col -->
-						<div class="col">
+						<div class="col-md-3">
 							<input class="form-control" type="text" placeholder="Last Name" />
 						</div>
 
 						<!-- .col -->
-						<div class="col">
+						<div class="col-md-3">
 							<input class="form-control" list="option-specialization" id="option_specialization" placeholder="Specialization">
 							<datalist id="option-specialization">
 								<option value="Pyschiatry"></option>
@@ -247,7 +262,7 @@
 						</div>
 						
 						<!-- .col -->
-						<div class="col">
+						<div class="col-md-3">
 							<input class="form-control" list="option-branch" id="option_branch" placeholder="Branch">
 							<datalist id="option-branch">
 								<option value="San Fernando"></option>
@@ -881,7 +896,7 @@
 			</div>
 			
 			<!-- .row -->
-			<div class="row">
+			<div class="row hidden">
 				<!-- .col -->
 				<div class="col-md-12"> 
 					<!-- .post-pagination -->
@@ -893,40 +908,6 @@
 						<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
 					</ul>
 				</div> 
-			</div>
-			
-			<!-- .for-mobile -->
-			<div class="row text-center for-mobile">
-				<a class="btn btn-secondary" href="#">View all Doctors</a>
-			</div>
-		</div>
-	</section> 
-	
-	<!-- -->
-	<section class="block-fullwidth bg-shade">
-		<!-- .container -->
-		<div class="container">
-			<!-- .row -->
-			<div class="row ">
-				<!-- .col -->
-				<div class="col-md-12 text-center">
-					<h2>Accredited HMO</h2>
-				</div>
-			</div>
-			
-			<!-- .row -->
-			<div class="row justify-content-center">
-				<!-- .col -->
-				<div class="col-md-12">
-					<ul class="list-accredited-hmo list-logos">
-						<li><a href="#" target="_blank"><img src="img/hmo/logo-fortune-care.png" class="img-fluid" alt="" /></a></li>
-						<li><a href="#" target="_blank"><img src="img/hmo/logo-hmi.png" class="img-fluid" alt="" /></a></li>
-						<li><a href="#" target="_blank"><img src="img/hmo/logo-intellicare.png" class="img-fluid" alt="" /></a></li>
-						<li><a href="#" target="_blank"><img src="img/hmo/logo-insular-health-care.png" class="img-fluid" alt="" /></a></li>
-						<li><a href="#" target="_blank"><img src="img/hmo/logo-medicard.png" class="img-fluid" alt="" /></a></li>
-						<li><a href="#" target="_blank"><img src="img/hmo/logo-philcare.png" class="img-fluid" alt="" /></a></li>
-					</ul>
-				</div>
 			</div>
 		</div>
 	</section>
@@ -1038,6 +1019,7 @@
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/scripts.js"></script>	
 </body>
