@@ -62,7 +62,7 @@
 	p  { font-size: 16px; line-height: 24px; margin-bottom: 20px; }
 	li { font-size: 16px; line-height: 24px; }
 	
-	.slider-main { padding-top: 180px; }
+	.slider-main { padding-top: 160px; }
 	.slider-main #slider-main .carousel-item { height: calc(100vh - 180px); }
 	.slider-main #slider-main .carousel-content { text-align: left; }
 	.slider-main #slider-main .carousel-content h1 { font-size: 72px; line-height: 72px; }

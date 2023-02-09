@@ -19,7 +19,7 @@ $(window).scroll(function() {
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 1000) {
+    if (scroll >= 500) {
         $(".utilities").addClass("show");
     } else {
         $(".utilities").removeClass("show");
@@ -71,3 +71,19 @@ $(document).on('ready', function() {
 $(window).on('hashchange', function(e){
 	history.replaceState ("", document.title, e.originalEvent.oldURL);
 });
+
+// Stop/Pause Video on Modal Close Hack
+document.addEventListener('DOMContentLoaded', () => {
+	// Get the video element
+	let video = document.getElementById("video_olmcmc");
+
+	// Play the video when the modal is opened
+	$('#modal_video').on('shown.bs.modal', function () {
+		video.play();
+	});
+
+	// Pause the video when the modal is closed
+	$('#modal_video').on('hidden.bs.modal', function () {
+		video.pause();
+	});
+})
