@@ -470,7 +470,7 @@ body.patients-accommodations .list-links .link-item-accommodations:before { left
 
 /* List: Services */
 .list-services { padding: 0; padding-bottom: 20px; vertical-align: top; }
-.list-services li { font-size: 14px; width: 100%; max-width: 48%; display: inline-block; padding: 0 15px; line-height: 22px; }
+.list-services li { font-size: 14px; width: 100%; /*max-width: 48%;*/ display: inline-block; padding: 0 15px; line-height: 22px; }
 .list-services li:before { content: "\f0da"; font-family: "Font Awesome 5 Pro"; font-weight: 900; margin-right: 10px; color: #8b0f4b; margin-left: -15px; }
 .list-services li h5 { display: inline-block; line-height: 32px; }
 .list-services li h6 { display: inline-block; line-height: 24px; }

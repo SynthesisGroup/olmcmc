@@ -82,9 +82,9 @@
 	footer .copyright .list-social { text-align: right; }
 	footer .list-contact { padding-left: 2rem; }
 	
-	.list-services li { max-width: 48%; }
+	/*.list-services li { max-width: 48%; }
 	.list-services.column-3 li { max-width: 32%; }
-	.list-services.column-4 li { max-width: 24%; }
+	.list-services.column-4 li { max-width: 24%; }*/
 	
 	.services .project-info-list { display: flex; }
 	.services .project-info-list li { width: 33.33%; }

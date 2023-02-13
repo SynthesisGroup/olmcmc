@@ -82,7 +82,13 @@
 							<li class="item-menu item-menu-home"><a href="index.html">Home</a></li>
 							<li class="item-menu item-menu-about"><a href="about.html">About</a></li>
 							<li class="item-menu item-menu-doctors"><a href="doctors.html">Doctors</a></li>
-							<li class="item-menu item-menu-services"><a href="services.html">Services</a></li>
+							<li class="item-menu item-menu-services">
+								<a href="services.html">Services</a>
+								<ul class="list-submenu">
+									<li class="item-submenu"><a href="services.html">Main</a></li>
+									<li class="item-submenu"><a href="services-clark.html">Clark</a></li>
+								</ul>
+							</li>
 							<li class="item-menu item-menu-patients">
 								<a href="patients.html">Patients</a>
 								<ul class="list-submenu">
@@ -177,7 +183,16 @@
 						<li><a href="index.html">Home</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="doctors.html">Doctors</a></li>
-						<li><a href="services.html">Services</a></li>
+						<li class="list-menu-parent">
+							<a href="services.html">Services</a>
+							<a class="toggle-submenu" href="#submenu_services" data-toggle="collapse"><i class="far fa-angle-down"></i></a>
+							<div class="collapse" id="submenu_services">
+								<ul class="list-submenu">
+									<li><a href="services.html">Main</a></li>
+									<li><a href="services-clark.html">Clark</a></li>
+								</ul>
+							</div>						
+						</li>
 						<li class="list-menu-parent">
 							<a href="patients.html">Patients</a>
 							<a class="toggle-submenu" href="#submenu_patients" data-toggle="collapse"><i class="far fa-angle-down"></i></a>
@@ -235,332 +250,11 @@
 			<!-- .row -->
 			<div class="row">
 				<!-- .col -->
-				<div class="col-md-12">
-					<table class="table table-bordered hidden">
-						<thead>
-							<tr>
-								<th colspan="4" style="width: 25%;">Services Offered</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td rowspan="5">Outpatient Services</td>
-								<td>Pre Employment</td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>Annual Physical Exam</td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>Executive Check Up</td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>General Check Up</td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>Rehab and Wellness</td>
-								<td></td>
-								<td></td>
-							</tr>
-						</tbody>
-						<tbody>
-							<tr>
-								<td rowspan="5">Inpatient Services</td>
-								<td>Presidential Rooms</td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>Executive Rooms</td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>Suite Rooms</td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>Private Rooms</td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>Male/Female Ward</td>
-								<td></td>
-								<td></td>
-							</tr>
-						</tbody>
-						<tbody>
-							<tr>
-								<td rowspan="15">Doctor’s Clinic</td>
-								<td rowspan="8">Internal Medicine</td>
-								<td>Cardiology</td>
-								<td>
-									<span>Mon and Fri 11:30am - 1:00pm</span><br />
-									<span>Tue and Wed 3:00pm - 5:00pm, 12:30pm - 3:00pm</span>								
-								</td>
-							</tr>
-							<tr>
-								<td>Pulmonology</td>
-								<td>
-									<span>Tuesday (by appointment)</span><br />
-									<span>Tuesday 9:00am-12:00nn</span>
-								</td>
-							</tr>
-							<tr>
-								<td>Gastroenterology</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>Endocrinology</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>Hematology</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>Infectious Diseases</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>Oncology</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>Rheumatology</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>Obstetrics and Gynecology</td>
-								<td></td>
-								<td>Mon 1:00pm-3:00pm</td>
-							</tr>
-							<tr>
-								<td rowspan="4">Surgery</td>
-								<td>General</td>
-								<td>Tue 2:00pm-3:00pm</td>
-							</tr>
-							<tr>
-								<td>Ophthalmology</td>
-								<td>Mon 9:00am-12nn / Tuesday 9:30am-12nn</td>
-							</tr>
-							<tr>
-								<td>ENT-HNS</td>
-								<td>by appointment</td>
-							</tr>
-							<tr>
-								<td>Orthopedics</td>
-								<td>Friday ; 3:00pm-5:00pm</td>
-							</tr>
-							<tr>
-								<td>Pediatrics</td>
-								<td></td>
-								<td>Wednesday ; 2:00-5:00pm</td>
-							</tr>
-							<tr>
-								<td>Dental</td>
-								<td></td>
-								<td></td>
-							</tr>
-						</tbody>
-						<tbody>
-							<tr>
-								<td>Emergency Services</td>
-								<td colspan="2"></td>
-								<td>24 hrs</td>
-							</tr>
-						</tbody>
-						<tbody>
-							<tr>
-								<td>Ambulance Services</td>
-								<td colspan="2"></td>
-								<td>24 hrs</td>
-							</tr>
-						</tbody>
-						<tbody>
-							<tr>
-								<td>Laboratory Services/Molecular Services</td>
-								<td>Drug Testing</td>
-								<td></td>
-								<td>8:00am - 5:00pm</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>Blood Station</td>
-								<td></td>
-								<td>24 hrs</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>Clinical Microscopy and Parasitology</td>
-								<td></td>
-								<td>24 hrs</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>Hematology</td>
-								<td></td>
-								<td>24 hrs</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>Clinical Chemistry</td>
-								<td></td>
-								<td>24 hrs</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>Immunology/Serology</td>
-								<td></td>
-								<td>24 hrs</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>RT-PCR</td>
-								<td></td>
-								<td>7:00am - 6:00pm STAT / 7:00am - 4:00pm Routine</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>Rapid Antigen Testing</td>
-								<td></td>
-								<td>24 hrs</td>
-							</tr>
-						</tbody>
-						<tbody>
-							<tr>
-								<td rowspan="12">Diagnostics Services</td>
-								<td>X-Ray</td>
-								<td></td>
-								<td>24 hrs</td>
-							</tr>
-							<tr>
-								<td>Fluoroscopy</td>
-								<td></td>
-								<td>by appointment</td>
-							</tr>
-							<tr>
-								<td rowspan="5">Heart Station</td>
-								<td>2D Echocardiography<br />(Pediatrics and Adult)</td>
-								<td>Weekdays 8:00am - 5:00pm</td>
-							</tr>
-							<tr>
-								<td>ECG</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>Treadmill</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>Stress- Echocardiography</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>
-									Vascular Duplex Scan
-									<ol type="1" class="mb-0">
-										<li>Arterial</li>
-										<li>Venous</li>
-										<li>Carotid</li>
-									</ol>
-								</td>
-								<td>by appointment</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>Holter Monitorin</td>
-								<td>Weekdays 8:00am - 5:00pm</td>
-							</tr>
-							<tr>
-								<td>CT-Scan</td>
-								<td></td>
-								<td>Weekdays 8:00am - 5:00pm</td>
-							</tr>
-							<tr>
-								<td>Pulmonary Laboratory</td>
-								<td>Arterial Blood and Gas Determination</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>Pulmonary Function Test</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>Audiometry</td>
-								<td></td>
-								<td>Weekdays 8:00am - 5:00pm</td>
-							</tr>
-						</tbody>
-						<tbody>
-							<tr>
-								<td colspan="4">Physical Medicine and Rehabilitation Services</td>
-							</tr>
-						</tbody>
-						<tbody>
-							<tr>
-								<td colspan="4">Ambulatory Surgical Services</td>
-							</tr>
-						</tbody>
-						<tbody>
-							<tr>
-								<td>Labor and Delivery Services</td>
-								<td>Fetal Monitoring</td>
-								<td></td>
-								<td></td>
-							</tr>
-						</tbody>
-						<tbody>
-							<tr>
-								<td rowspan="2">Scope Center</td>
-								<td>Endoscopy</td>
-								<td></td>
-								<td>by appointment</td>
-							</tr>
-							<tr>
-								<td>Colonoscopy</td>
-								<td></td>
-								<td>by appointment</td>
-							</tr>
-						</tbody>
-						<tbody>
-							<tr>
-								<td>Dialysis</td>
-								<td colspan="2"></td>
-								<td>Monday- Saturday</td>
-							</tr>
-						</tbody>
-						<tbody>
-							<tr>
-								<td>Eye Center</td>
-								<td colspan="2"></td>
-								<td>Thursday</td>
-							</tr>
-						</tbody>
-						<tbody>
-							<tr>
-								<td>Pharmacy</td>
-								<td colspan="2"></td>
-								<td>24 hrs</td>
-							</tr>
-						</tbody>
-					</table>
-					
+				<div class="col-md-3">
 					<h4>Ground Floor</h4>
-					<ul class="list-services column-4">
+					<ul class="list-services d-block">
 						<li><a href="#anchor_link_1"><h6>Emergency Room</h6></a></li>
 						<li><a href="#anchor_link_2"><h6>Laboratory Department</h6></a></li>
-						<li><a href="#anchor_link_3"><h6>Pharmacy</h6></a></li>
 						<li><a href="#anchor_link_4"><h6>Eye Center</h6></a></li>
 						<li><a href="#anchor_link_5"><h6>Clinical Nutrition Wellness</h6></a></li>
 						<li><a href="#anchor_link_5"><h6>Management Center</h6></a></li>
@@ -572,12 +266,11 @@
 				</div>
 				
 				<!-- .col -->
-				<div class="col-md-12">
+				<div class="col-md-3">
 					<h4>Upper Ground Floor</h4>
-					<ul class="list-services column-4">
+					<ul class="list-services">
 						<li><a href="#anchor_link_10"><h6>Information/Admission</h6></a></li>
 						<li><a href="#anchor_link_11"><h6>Women’s Ultrasound Clinic</h6></a></li>
-						<li><a href="#anchor_link_12"><h6>HMO Office</h6></a></li>
 						<li><a href="#anchor_link_13"><h6>ENT Clinic</h6></a></li>
 						<li><a href="#anchor_link_14"><h6>Chemotherapy Center</h6></a></li>
 						<li><a href="#anchor_link_15"><h6>Hemodialysis Center</h6></a></li>
@@ -587,26 +280,23 @@
 				</div>
 				
 				<!-- .col -->
-				<div class="col-md-12">
+				<div class="col-md-3">
 					<h4>Second Floor</h4>
-					<ul class="list-services column-3">
+					<ul class="list-services">
 						<li><a href="#anchor_link_18"><h6>Operating Room Complex</h6></a></li>
-						<!--li><a href="#anchor_link_19"><h6>Catherization Laboratory</h6></a></li-->
 						<li><a href="#anchor_link_20"><h6>Labor And Delivery Room</h6></a></li>
 						<li><a href="#anchor_link_21"><h6>Neonatal Intensive Care Unit (NICU)</h6></a></li>
-						<li><a href="#anchor_link_22"><h6>Intensive Care Unit (ICU)</h6></a></li>
 						<li><a href="#anchor_link_23"><h6>Acute Stroke Unit (ACU)</h6></a></li>
 						<li><a href="#anchor_link_24"><h6>Acute Cardiac Care</h6></a></li>
 						<li><a href="#anchor_link_25"><h6>Cardiovascular Operating Room</h6></a></li>
-						<li><a href="#anchor_link_26"><h6>Pulmonary Laboratory (Respicare)</h6></a></li>
 						<li><a href="#anchor_link_26"><h6>Pulmonary Laboratory (Respicare)</h6></a></li>
 					</ul>
 				</div>
 				
 				<!-- .col -->
-				<div class="col-md-12">
+				<div class="col-md-3">
 					<h4>Fourth Floor</h4>
-					<ul class="list-services column-3">
+					<ul class="list-services">
 						<li><h6>Medical Records</h6></li>
 						<!--li><h6>Social Service</h6></li-->
 					</ul>
@@ -770,55 +460,6 @@
 						<li>Unicap Immunology</li>
 						<li>Microbiology</li>
 					</ul>
-				</div>
-			</div>
-			
-			<!-- .row -->
-			<div class="row justify-content-around">
-				<!-- .col -->
-				<div class="col-md-4">
-					<img src="img/services/services-holder.jpg" class="img-fluid" alt="" />
-				</div>
-				
-				<!-- .col -->
-				<div class="col-md-7">
-					<a name="anchor_link_3" id="anchor_link_3" class="anchor-link"></a>
-					<h3 class="fc-maroon widget-title">Pharmacy</h3>					
-					<p class="service-description hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <ul class="project-info-list">
-						<!-- -->
-                        <li>
-                            <div class="icon-holder">
-                                <i class="fa fa-mobile-android-alt" aria-hidden="true"></i>
-                            </div>
-                            <div class="text-holder">
-                                <h6>Contact Number</h6>
-                                <p><a href="tel:+639175641685">+639175641685</a></p>
-                            </div>
-                        </li>
-						
-						<!-- -->
-                        <li>
-                            <div class="icon-holder">
-                                <i class="fa fa-phone-alt" aria-hidden="true"></i>
-                            </div>
-                            <div class="text-holder">
-                                <h6>Landline</h6>
-                                <p> Local 199</p>
-                            </div>
-                        </li>
-						
-						<!-- -->
-                        <li>
-                            <div class="icon-holder">
-                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                            </div>
-                            <div class="text-holder">
-                                <h6>Availability</h6>
-                                <p>24 Hours</p>
-                            </div>
-                        </li>
-                    </ul>
 				</div>
 			</div>
 			
@@ -1129,7 +770,7 @@
                         </li>
                     </ul>
 					
-					<h4>For Out-Patients, Scheduled &amp; Emergency Test Procedure</h4>
+					<h4>Services</h4>
 					<ul class="list-services">
 						<li>MRI</li>
 						<li>CT-SCAN</li>
@@ -1212,7 +853,7 @@
                         </li>
                     </ul>
 					
-					<h4>For Out-Patients, Scheduled &amp; Emergency Test Procedure</h4>
+					<h4>Services</h4>
 					<ul class="list-services">
 						<li>Treadmill Stress Test</li>
 						<li>ECG</li>
@@ -1296,7 +937,7 @@
                         </li>
                     </ul>
 					
-					<h4>For Out-Patients, Scheduled &amp; Emergency Test Procedure</h4>
+					<h4>Services</h4>
 					<h5>Gamma Camera</h5>
 					<ul class="list-services">
 						<li>Hepatobilliary Scintigraphy</li>
@@ -1461,7 +1102,7 @@
                             </div>
                             <div class="text-holder">
                                 <h6>Availability</h6>
-                                <p>24 Hours</p>
+                                <p>Monday to Friday 8:00am - 5:00pm</p>
                             </div>
                         </li>
                     </ul>
@@ -1521,94 +1162,6 @@
 					<ul class="list-services">
 						<li>Congenital Anomaly Scan in 2D</li>
 						<li>OB Velocimetry</li>
-					</ul>
-				</div>
-			</div>
-			
-			<!-- .row -->
-			<div class="row justify-content-around">
-				<!-- .col -->
-				<div class="col-md-4">
-					<img src="img/services/services-holder.jpg" class="img-fluid" alt="" />
-				</div>
-				
-				<!-- .col -->
-				<div class="col-md-7">
-					<a name="anchor_link_12" id="anchor_link_12" class="anchor-link"></a>
-					<h3 class="fc-maroon widget-title">HMO Office</h3>					
-					<p class="service-description hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <ul class="project-info-list">
-						<!-- -->
-                        <li>
-                            <div class="icon-holder">
-                                <i class="fa fa-mobile-android-alt" aria-hidden="true"></i>
-                            </div>
-                            <div class="text-holder">
-                                <h6>Contact Number</h6>
-                                <p><a href="tel:+639988636613">+639988636613</a></p>
-								<p><a href="tel:+639175974988">+639175974988</a></p>
-                            </div>
-                        </li>
-						
-						<!-- -->
-                        <li>
-                            <div class="icon-holder">
-                                <i class="fa fa-phone-alt" aria-hidden="true"></i>
-                            </div>
-                            <div class="text-holder">
-                                <h6>Landline</h6>
-                                <p>(435-2403 / 455-1906) Local 201/309</p>
-                            </div>
-                        </li>
-						
-						<!-- -->
-                        <li class="hidden">
-                            <div class="icon-holder">
-                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                            </div>
-                            <div class="text-holder">
-                                <h6>Availability</h6>
-                                <p>Mon to Sat</p>
-                            </div>
-                        </li>
-                    </ul>
-					
-					<h4>HMO Partners</h4>
-					<ul class="list-services column-3">
-						<li>Medicard</li>
-						<li>Intellicare</li>
-						<li>Avega</li>
-						<li>Maxicare</li>
-						<li>Philcare</li>
-						<li>Cocolife</li>
-						<li>Etiqa</li>
-						<li>Kaiser</li>
-						<li>IMS</li>
-						<li>HMI</li>
-						<li>Insular Life</li>
-						<li>Dynamic Care</li>
-						<li>Getwell</li>
-						<li>Eastwest</li>
-						<li>Caritas</li>
-						<li>FlexiCare</li>
-						<li>ValueCare</li>
-						<li>Prudentia Life</li>
-						<li>MedoCare</li>
-						<li>MedAsia</li>
-					</ul>
-					
-					<h4>Corporate Partners</h4>
-					<ul class="list-services column-3">
-						<li>PAGCOR</li>
-						<li>Acciona Daelim</li>
-						<li>Superl Leatherware Inc.</li>
-						<li>Optimize Customer Solutions Inc.</li>
-						<li>Orocare</li>
-						<li>Durastress</li>
-						<li>Development Bank Philippines</li>
-						<li>SSS</li>
-						<li>PEPSI</li>
-						<li>Italian Thai Development</li>
 					</ul>
 				</div>
 			</div>
@@ -1843,7 +1396,7 @@
                         </li>
                     </ul>
 					
-					<h4>For Out-Patients, Scheduled/Walk-in &amp; Emergency Cases</h4>
+					<h4>Services</h4>
 					<h5>Hemodialysis</h5>
 					<ul class="list-services">
 						<li>Conventional</li>
@@ -2356,82 +1909,6 @@
 					<h5>Surfactant Administration</h5>
 					<h5>Neonatal care post-surgery</h5>
 					<h5>Blood transfusion</h5>
-				</div>
-			</div>
-			
-			<!-- .row -->
-			<div class="row justify-content-around">
-				<!-- .col -->
-				<div class="col-md-4">
-					<div id="services_icu" class="carousel slide" data-bs-ride="carousel">
-						<!-- -->
-						<div class="carousel-inner">
-							<div class="carousel-item active"><img src="img/services/services-icu/1.jpg" class="img-fluid" alt="" /></div>
-							<div class="carousel-item"><img src="img/services/services-icu/2.jpg" class="img-fluid" alt="" /></div>
-							<div class="carousel-item"><img src="img/services/services-icu/3.jpg" class="img-fluid" alt="" /></div>
-							<div class="carousel-item"><img src="img/services/services-icu/4.jpg" class="img-fluid" alt="" /></div>
-						</div>
-						
-						<!-- -->
-						<div class="carousel-control">
-							<button class="carousel-control-prev" type="button" data-bs-target="#services_icu" data-bs-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Previous</span>
-							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#services_icu" data-bs-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Next</span>
-							</button>
-						</div>
-					</div>
-				</div>
-				
-				<!-- .col -->
-				<div class="col-md-7">
-					<a name="anchor_link_22" id="anchor_link_22" class="anchor-link"></a>
-					<h3 class="fc-maroon widget-title">Intensive Care Unit (ICU)</h3>					
-					<p class="service-description hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <ul class="project-info-list">
-						<!-- -->
-                        <li class="hidden">
-                            <div class="icon-holder">
-                                <i class="fa fa-mobile-android-alt" aria-hidden="true"></i>
-                            </div>
-                            <div class="text-holder">
-                                <h6>Contact Number</h6>
-                                <p><a href="tel:+639988636614">+639988636614</a></p>
-                            </div>
-                        </li>
-						
-						<!-- -->
-                        <li>
-                            <div class="icon-holder">
-                                <i class="fa fa-phone-alt" aria-hidden="true"></i>
-                            </div>
-                            <div class="text-holder">
-                                <h6>Landline</h6>
-                                <p>435-2421 Local 434 / 402</p>
-                            </div>
-                        </li>
-						
-						<!-- -->
-                        <li>
-                            <div class="icon-holder">
-                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                            </div>
-                            <div class="text-holder">
-                                <h6>Availability</h6>
-                                <p>24 Hours</p>
-                            </div>
-                        </li>
-                    </ul>
-					
-					<!--h4>Services</h4>
-					<ul class="list-services">
-						<li>Phototherapy</li>
-						<li>Thermoregulation (incubator, radiant warmer)</li>
-						<li>Newborn Screening</li>
-					</ul-->
 				</div>
 			</div>
 			
